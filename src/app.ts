@@ -12,6 +12,12 @@ app.use(morgan("dev"));
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.json({
+        "name": "Node-MongoDB-Heroku",
+        "description": "This is a simple API Rest of Node and MongoDB. The application was deploy on heroku.",
+    })
+})
 app.use("/api/tasks", routes.taskRoutes);
 
 export default app;
