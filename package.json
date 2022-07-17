@@ -1,0 +1,26 @@
+{
+  "name": "mongodb-heroku",
+  "version": "1.0.0",
+  "description": "This is a simple api rest of tasks using mongodb as database. The application was deploy in heroku",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaudioGuevaraDev/node-mongodb-heroku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaudioGuevaraDev/node-mongodb-heroku/issues"
+  },
+  "homepage": "https://github.com/ClaudioGuevaraDev/node-mongodb-heroku#readme",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  }
+}
