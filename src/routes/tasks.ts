@@ -2,7 +2,7 @@ import { Router } from "express";
 import {
   createTask,
   deleteTask,
-  getATask,
+  getTask,
   getTasks,
   updateTask,
 } from "../controllers/tasks";
@@ -10,7 +10,7 @@ import {
 const router = Router();
 
 router.get("/", getTasks);
-router.get("/:id", getATask);
+router.get("/:id", getTask);
 router.post("", createTask);
 router.delete("/:id", deleteTask);
 router.put("/:id", updateTask);
