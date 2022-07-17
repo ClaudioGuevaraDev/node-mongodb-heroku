@@ -1,4 +1,4 @@
-@api = http://localhost:4000/api/tasks
+@api = https://node-mongodbatlas-heroku.herokuapp.com/api/tasks
 
 ###
 GET {{api}}
@@ -9,8 +9,9 @@ POST {{api}}
 Content-Type: application/json
 
 {
-    "name": "Task one",
-    "description": "first description"
+    "name": "Task four",
+    "description": "This is the four description",
+    "done": true
 }
 ###
 DELETE {{api}}/62d4383f54121c276928bd6c
