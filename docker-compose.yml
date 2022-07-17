@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: server
+    build: .
+    ports:
+      - "4000:4000"
+    environment:
+      - MONGODB_URI=mongodb://database/example
+    depends_on:
+      - database
+  database:
+    container_name: mongo
+    build: ./database

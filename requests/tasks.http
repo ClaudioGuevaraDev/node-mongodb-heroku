@@ -9,7 +9,8 @@ POST {{api}}
 Content-Type: application/json
 
 {
-    "name": "Task three"
+    "name": "Task one",
+    "description": "first description"
 }
 ###
 DELETE {{api}}/62d4383f54121c276928bd6c
